@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/LMS.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="heading">
+        <h1>Library Management</h1>
+    </div>
+    <h2>Home</h2>
+    <table id="center">
+        <thead>
+        <tr>
+            <th>Sr</th>
+            <th>Book</th>
+            <th>Author</th>
+            <th>Publisher</th>
+            <th>Publishing Date</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody id="bookTableBody">
+
+    </tbody>
+    </table>
+    <p>Books available in Library</p>
+    <ul id="buttons">
+        <li><a href="/add.html">Add Book</a></li>
+        <li><a href="author.html">Author</a></li>
+        <li><a href="publisher.html">Publisher</a></li>
+    </ul>
+    
+    <!-- Edit Form -->
+    <div id="editFormContainer" style="display: none;">
+        <h3>Edit Book</h3>
+        <form id="editForm">
+            <input type="hidden" id="editIndex">
+            <label for="editName">Name:</label>
+            <input type="text" id="editName" name="name" required>
+            <br><br>
+            <label for="editAuthor">Author:</label>
+            <input type="text" id="editAuthor" name="author" required>
+            <br><br>
+            <label for="editPublisher">Publisher:</label>
+            <input type="text" id="editPublisher" name="publisher" required>
+            <br><br>
+            <label for="editPublishingDate">Publishing Date:</label>
+            <input type="date" id="editPublishingDate" name="publishing_date" required>
+            <br><br>
+            <button type="button" id="saveEdit">Save Changes</button>
+            <button type="button" id="cancelEdit">Cancel</button>
+        </form>
+    </div>
+    <script src="/js/home.js"></script>
+</body>
+</html>
